@@ -1,4 +1,5 @@
 ﻿using UGF.Application.Runtime;
+using UGF.Logs.Runtime;
 
 namespace UGF.Module.Authentication.Runtime
 {
@@ -12,6 +13,8 @@ namespace UGF.Module.Authentication.Runtime
 
         public void SignOut()
         {
+            Log.Debug("Authentication signing out.");
+
             OnSignOut();
         }
 

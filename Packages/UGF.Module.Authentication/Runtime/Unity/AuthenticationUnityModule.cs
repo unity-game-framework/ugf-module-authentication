@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using UGF.Application.Runtime;
+using UGF.Logs.Runtime;
 using UGF.Module.Services.Runtime;
 using UGF.Module.Services.Runtime.Unity;
 using Unity.Services.Authentication;
@@ -36,6 +37,8 @@ namespace UGF.Module.Authentication.Runtime.Unity
                     CreateAccount = Description.SignAnonymousDescription.CreateAccount
                 };
 
+                Log.Debug("Authentication Unity signing anonymously.");
+
                 await Service.SignInAnonymouslyAsync(options);
             }
         }
@@ -55,6 +58,11 @@ namespace UGF.Module.Authentication.Runtime.Unity
         protected override void OnSignOut()
         {
             Service.SignOut(Description.ClearCredentialsOnSignOut);
+
+            Log.Debug("Authentication Unity signed out", new
+            {
+                Description.ClearCredentialsOnSignOut
+            });
         }
 
         private void OnConfiguringOptions(InitializationOptions options)
@@ -62,6 +70,11 @@ namespace UGF.Module.Authentication.Runtime.Unity
             if (Description.HasProfile)
             {
                 options.SetProfile(Description.Profile);
+
+                Log.Debug("Authentication Unity setup profile", new
+                {
+                    Description.Profile
+                });
             }
         }
     }
