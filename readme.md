@@ -4,13 +4,14 @@ UGF.Module.Authentication
 
 ## Information
 
-- **Version**: `0.0.0-preview`
+- **Version**: `1.0.0-preview`
 - **Unity**: `2022.2`
 - **API Compatibility Level**: `.NET Standard 2.1`
 
 ### Dependencies
 
-- N/A
+- `com.ugf.module.services`: `1.0.0-preview.1`
+- `com.unity.services.authentication`: `2.4.0`
 
 
 ### Description
