@@ -1,0 +1,22 @@
+{
+  "name": "com.ugf.module.authentication",
+  "displayName": "UGF.Module.Authentication",
+  "version": "0.0.0-preview",
+  "unity": "2022.2",
+  "apiCompatibility": ".NET Standard 2.1",
+  "description": "Module to manage Unity Authentication.",
+  "author": {
+    "name": "Unity Game Framework",
+    "url": "https://github.com/unity-game-framework"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unity-game-framework/ugf-module-authentication.git"
+  },
+  "changelogUrl": "https://github.com/unity-game-framework/ugf-module-authentication/blob/main/changelog.md",
+  "licensesUrl": "https://github.com/unity-game-framework/ugf-module-authentication/blob/main/license",
+  "publishConfig": {
+    "registry": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
+  },
+  "dependencies": {}
+}
