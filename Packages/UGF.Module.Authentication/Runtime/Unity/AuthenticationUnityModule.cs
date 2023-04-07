@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using UGF.Application.Runtime;
 using UGF.Logs.Runtime;
 using UGF.Module.Services.Runtime;
@@ -63,6 +64,13 @@ namespace UGF.Module.Authentication.Runtime.Unity
             {
                 Description.ClearCredentialsOnSignOut
             });
+        }
+
+        protected override string OnGetUserId()
+        {
+            string id = Service.PlayerId;
+
+            return !string.IsNullOrEmpty(id) ? id : throw new InvalidOperationException("Authentication has no signed user.");
         }
 
         private void OnConfiguringOptions(InitializationOptions options)
