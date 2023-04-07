@@ -7,5 +7,6 @@ namespace UGF.Module.Authentication.Runtime
         bool IsSigned { get; }
 
         void SignOut();
+        string GetUserId();
     }
 }

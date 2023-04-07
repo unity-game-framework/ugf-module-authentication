@@ -18,7 +18,13 @@ namespace UGF.Module.Authentication.Runtime
             OnSignOut();
         }
 
+        public string GetUserId()
+        {
+            return OnGetUserId();
+        }
+
         protected abstract bool OnIsSigned();
         protected abstract void OnSignOut();
+        protected abstract string OnGetUserId();
     }
 }

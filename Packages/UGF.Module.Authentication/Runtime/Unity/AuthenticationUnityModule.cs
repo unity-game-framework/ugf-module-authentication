@@ -65,6 +65,11 @@ namespace UGF.Module.Authentication.Runtime.Unity
             });
         }
 
+        protected override string OnGetUserId()
+        {
+            return Service.PlayerId;
+        }
+
         private void OnConfiguringOptions(InitializationOptions options)
         {
             if (Description.HasProfile)
