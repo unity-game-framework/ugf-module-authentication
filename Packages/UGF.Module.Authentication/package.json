@@ -16,10 +16,10 @@
   "changelogUrl": "https://github.com/unity-game-framework/ugf-module-authentication/blob/main/changelog.md",
   "licensesUrl": "https://github.com/unity-game-framework/ugf-module-authentication/blob/main/license",
   "publishConfig": {
-    "registry": "https://unitygameframework.jfrog.io/artifactory/api/npm/default"
+    "registry": "https://api.upmhub.org/registries/unity-game-framework"
   },
   "dependencies": {
-    "com.ugf.module.services": "1.0.0-preview.1",
-    "com.unity.services.authentication": "2.4.0"
+    "com.ugf.module.services": "1.0.0-preview.2",
+    "com.unity.services.authentication": "3.2.0"
   }
 }
