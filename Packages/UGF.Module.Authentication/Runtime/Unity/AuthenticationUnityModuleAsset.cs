@@ -30,10 +30,9 @@ namespace UGF.Module.Authentication.Runtime.Unity
             }
         }
 
-        protected override IApplicationModuleDescription OnBuildDescription()
+        protected override AuthenticationUnityModuleDescription OnBuildDescription()
         {
             return new AuthenticationUnityModuleDescription(
-                typeof(IAuthenticationModule),
                 m_signAnonymouslyOnInitializeAsync,
                 m_signAnonymousSettings.GetDescription(),
                 m_clearCredentialsOnSignOut,

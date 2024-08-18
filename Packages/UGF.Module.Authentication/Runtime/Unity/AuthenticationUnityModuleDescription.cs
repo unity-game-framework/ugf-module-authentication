@@ -14,13 +14,11 @@ namespace UGF.Module.Authentication.Runtime.Unity
         private readonly string m_profile;
 
         public AuthenticationUnityModuleDescription(
-            Type registerType,
             bool signAnonymouslyOnInitializeAsync,
             AuthenticationUnitySignAnonymousDescription signAnonymousDescription,
             bool clearCredentialsOnSignOut,
             string profile)
         {
-            RegisterType = registerType ?? throw new ArgumentNullException(nameof(registerType));
             SignAnonymouslyOnInitializeAsync = signAnonymouslyOnInitializeAsync;
             SignAnonymousDescription = signAnonymousDescription ?? throw new ArgumentNullException(nameof(signAnonymousDescription));
             ClearCredentialsOnSignOut = clearCredentialsOnSignOut;
