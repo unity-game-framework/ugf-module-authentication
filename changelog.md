@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-preview.3](https://github.com/unity-game-framework/ugf-module-authentication/releases/tag/1.0.0-preview.3) - 2024-08-18  
+
+### Release Notes
+
+- [Milestone](https://github.com/unity-game-framework/ugf-module-authentication/milestone/4?closed=1)  
+    
+
+### Changed
+
+- Update package ([#7](https://github.com/unity-game-framework/ugf-module-authentication/issues/7))  
+    - Update dependencies: `com.ugf.module.services` to `1.0.0-preview.3` and `com.unity.services.authentication` to `3.3.3` versions.
+    - Update package _Unity_ version to `2023.2`.
+    - Change `AuthenticationModule` and related classes to support updated _Application_ package.
+
 ## [1.0.0-preview.2](https://github.com/unity-game-framework/ugf-module-authentication/releases/tag/1.0.0-preview.2) - 2023-12-18  
 
 ### Release Notes
